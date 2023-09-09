@@ -1,5 +1,5 @@
 const canvas = document.querySelector("canvas");
-const targetInput = documeny.querySelector("#target");
+const targetInput = document.querySelector("#target");
 const encryptionInput = document.querySelector("#encryption");
 const saveButton = document.querySelector("button");
 let target;
@@ -30,7 +30,7 @@ function save() {
     const img = new SimpleImage(300, 300);
 
     for (let i = 0; i < 300; i++){
-        for (let j = 0; j < 300; i++){
+        for (let j = 0; j < 300; j++){
             const targetPixel = target.getPixel(i, j);
             const encryptionPixel = encryption.getPixel(i, j);
             const pixel = img.getPixel(i, j);
